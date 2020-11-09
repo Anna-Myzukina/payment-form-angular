@@ -1,6 +1,6 @@
 ## Payment form
 
-![screen](https://github.com/Anna-Myzukina/password_generator_angular/blob/main/4lhaio.gif)
+![screen](https://github.com/Anna-Myzukina/payment-form-angular/blob/main/4lnxr5.gif)
 
 This project was generated with:
 * [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
@@ -11,7 +11,7 @@ This project was generated with:
 
 ### Try Live version:
 
-- [ ] [Payment form](#)
+- [ ] [Payment form](https://payment-form-angular.vercel.app/)
 
 ## [3+ Ways to Add Bootstrap 4 to Angular](https://www.techiediaries.com/angular-bootstrap/)
 
