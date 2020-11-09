@@ -1,15 +1,47 @@
 <div class="container">
-  <div class="columns is-centered">
-<div class="box column is-one-third">
-  <h1>Typing Challenge</h1>
+  <h3>Payment form</h3>
 
-<div>
-  <label>Randomly generated text</label>
-  <input (input)="onNameChange($event.target.value)" />
-</div>
+  <div class="row">
+    <div class="form-group col">
+      <label>Payee name</label>
+      <input class="form-control" (input)="onNameChange($event.target.value)" />
+    </div>
 
-{{ name | titlecase }}
-  <h2>Success!</h2>
-</div>
+
+    <div class="col">
+      <label><b>Name</b></label>
+      <div>
+        {{ name | titlecase }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment date</label>
+      <input type="date" class="form-control" (input)="onDateChange($event.target.value)" />
+    </div>
+
+
+    <div class="col">
+      <label><b>Payment date</b></label>
+      <div>
+        {{ currentDate | date: 'MMMM d, y' }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Payment amount</label>
+      <input class="form-control" (input)="onAmountChange($event.target.value)" />
+    </div>
+
+
+    <div class="col">
+      <label><b>Payment amount</b></label>
+      <div>
+        {{ amount | currency: 'UAH' }}
+      </div>
+    </div>
   </div>
 </div>
